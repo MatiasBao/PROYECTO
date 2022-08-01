@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-image: url(../imagenes/fondo.webp);
+    background-attachment: fixed;
+    background-size: 150% 150%;
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#grillaEstudios{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+    justify-items: stretch;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+}
+
+.estudio{
+    grid-column: 1;
+}
+
+.imgestudio{
+    grid-column: 2;
+}
+
+
+header{
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+#video{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#texto{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+footer{
+    grid-column: 1 / -1;
+    grid-row: 3;
+    ;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+
+}
+
+.botonMenu{
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: black;
+    text-decoration: none;
+    font-family: "Edu TAS Beginner";
+    margin-right: 2.5vw;
+    margin-left: 2.5vw;
+}
+
+p{
+    font-size: 1vw;
+    margin-left: 5px;
+}
+
+#cartelBienvenido{
+    font-size: 2vw;
+    margin-left: 5px;
+}
+
+h2{
+    font-size: 1.5vw;
+    font-family: "Edu TAS Beginner"
+}
+
+div.estudio{
+    width: 100%;
+    height: 33%;
+}
+
+.estudio p, img{
+    display: flex;
+    margin: 20px 40px 20px 40px;
+
+}
+
+.estudio p{
+    max-width: 60%;
+
+}
+
+.estudio img{
+    max-width: 10%;
+    max-height: 10%;
+}
+#galeria{
+    font-size: 40px;
+    text-align: center;
+}
+
+.imagenesGaleria{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#contacto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-family: "Edu TAS Beginner";
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 100px;
+    justify-content: space-around;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+iframe {
+    display:block;
+    width:100%;
+    height:100%;
+}
+@media only screen and (max-width: 600px) {
+    .botonMenu{
+        margin-right: 1vw;
+        margin-left: 1vw;
+        font-size: 1.7vw;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    p{
+        font-size: 2vw;
+    }
+    #cartelBienvenido{
+        font-size: 4vw;
+    }
+
+    footer{
+        font-size: 1.5vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+}
+
+#video{
+    height: 100%;
+    width: 100%;
+}
